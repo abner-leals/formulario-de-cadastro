@@ -1,11 +1,14 @@
 import "./App.css";
-import Form from "./Pages/Cadastro";
+import { BrowserRouter as Router } from "react-router-dom";
+import Rotas from "./Routes";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Form />
+        <Router>
+          <Rotas />
+        </Router>
       </header>
     </div>
   );
